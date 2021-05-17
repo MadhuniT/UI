@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User login</title>
+	<link rel="stylesheet" type="text/css" href="ui.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	
+		<div class="form-box" onsubmit="return validate()">
+
+			<div class="Sayhello">Say Hello!</div>
+				<div class="containor">
+					<form id="login" class="input-group">
+						 <div class="fields">
+						 	<label class="labels">Your name:</label>
+							<input type="text" class="input-field" placeholder="Enter Your Name" required>
+
+						 </div>
+
+						 <div class="fields">
+						 	<label class="labels">Email:</label>
+							<input onkeyup="check()" type="Email" class="input-field" placeholder="Enter Your Email adress" id="Email" required>
+							<i class="fa fa-times e_times"></i>
+							<i class="fa fa-check e_check"></i>
+							<div class="enter">Enter Valid Email</div>
+						 </div>
+						 
+
+						 <div class="fields">
+						 	<label class="labels">Needed service:</label>
+							<select class="input-field" id="first">
+								<option >Choose service</option>
+								<option>One</option>
+								<option>Two</option>
+								<option>Three</option>
+							</select>
+							<span class="custom-arrow"></span>
+						 </div>
+
+						 <div class="fields">
+						 	<label class="labels">Budget:</label>
+						 	<select class="input-field" id="second">
+						 		<option >Select budget</option>
+						 		<option>One</option>
+								<option>Two</option>
+								<option>Three</option>
+						 	</select>
+						 	<span class="custom-arrow"></span>
+							
+						 </div>
+						 <div class="fields">
+						 	<label class="labels">Message:</label>
+							<textarea class="input-field" placeholder="Your Message here" rows="3" required></textarea>
+						 </div>
+
+
+						    <button type="submit" class="submit-btn">Submit &#8594;</button>
+					</form>
+				   
+				
+			    </div>
+	    </div>	
+	
+	<script src="ui.js" ></script>
+	
+	        
+</body>
+    
+</html>
